@@ -76,7 +76,7 @@ export const Hero = () => {
           >
             <div className="glass rounded-full px-7 py-3 flex items-center gap-3">
               <Heart className="w-4 h-4 text-[#E4899B]" fill="currentColor" strokeWidth={0} />
-              <span className="font-body tracking-[0.15em] text-sm text-[#2C2C2C]">24 · 01 · 2027 · RATLAM</span>
+              <span className="font-body tracking-[0.15em] text-sm text-[#2C2C2C]">24 · 01 · 2027 · Gondi Dharamsi & Hatnara Ratlam</span>
             </div>
             <button
               onClick={() => window.__lenis?.scrollTo(document.getElementById("events"), { offset: -70 })}

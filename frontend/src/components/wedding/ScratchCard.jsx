@@ -116,7 +116,7 @@ export const ScratchCard = () => {
                   <p className="font-heading text-5xl md:text-6xl font-light gold-gradient-text mt-2">24 · 01 · 2027</p>
                   <p className="font-script text-3xl text-[#E4899B] mt-2">Manas &amp; Kavita</p>
                   <p className="font-body text-sm text-[#595959] mt-1 flex items-center justify-center gap-2">
-                    <Heart className="w-3.5 h-3.5 text-[#E4899B]" fill="currentColor" strokeWidth={0} /> Ratlam, Madhya Pradesh
+                    <Heart className="w-3.5 h-3.5 text-[#E4899B]" fill="currentColor" strokeWidth={0} /> Gondi Dharamsi & Hatnara Ratlam, Madhya Pradesh
                   </p>
                 </motion.div>
               </div>

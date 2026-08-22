@@ -48,7 +48,7 @@ export const Footer = () => (
     <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
       <div>
         <p className="font-script text-3xl gold-gradient-text">{COUPLE.groom} &amp; {COUPLE.bride}</p>
-        <p className="font-body text-white/50 text-sm mt-1 tracking-wide">24 · 01 · 2027 · Ujjain, India</p>
+        <p className="font-body text-white/50 text-sm mt-1 tracking-wide">24 · 01 · 2027 · Gondi Dharamsi & Hatnara Ratlam, India</p>
       </div>
       <p className="font-body text-white/40 text-xs tracking-[0.15em] flex items-center gap-2">
         Made with <Heart className="w-3.5 h-3.5 text-[#E4899B]" fill="currentColor" strokeWidth={0} /> for our special day
