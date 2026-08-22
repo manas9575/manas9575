@@ -7,51 +7,80 @@ export const BackgroundMusic = () => {
   const audioRef = useRef(null);
   const [playing, setPlaying] = useState(false);
   const [idx, setIdx] = useState(0);
-  const startedRef = useRef(false);
 
-  // Start on first user interaction (Vakratunda plays first).
+  // Autoplay on page load
   useEffect(() => {
-    const tryStart = () => {
-      if (startedRef.current || !audioRef.current) return;
-      audioRef.current.volume = 0.4;
-      audioRef.current
-        .play()
-        .then(() => {
-          startedRef.current = true;
-          setPlaying(true);
-        })
-        .catch(() => {});
-    };
-    const events = ["click", "touchstart", "scroll", "keydown"];
-    events.forEach((e) => window.addEventListener(e, tryStart, { once: true, passive: true }));
-    return () => events.forEach((e) => window.removeEventListener(e, tryStart));
+    const audio = audioRef.current;
+    if (!audio) return;
+
+    audio.volume = 0.4;
+
+    audio
+      .play()
+      .then(() => {
+        setPlaying(true);
+      })
+      .catch(() => {
+        // Browser blocked autoplay.
+        // Start music on first interaction instead.
+        const startMusic = () => {
+          audio
+            .play()
+            .then(() => setPlaying(true))
+            .catch(() => {});
+        };
+
+        window.addEventListener("click", startMusic, { once: true });
+        window.addEventListener("touchstart", startMusic, { once: true });
+        window.addEventListener("keydown", startMusic, { once: true });
+
+        return () => {
+          window.removeEventListener("click", startMusic);
+          window.removeEventListener("touchstart", startMusic);
+          window.removeEventListener("keydown", startMusic);
+        };
+      });
   }, []);
 
-  // When the track index changes, load & continue playing the next track.
+  // Play next song automatically
   useEffect(() => {
-    const a = audioRef.current;
-    if (!a) return;
-    a.volume = 0.4;
-    if (playing || startedRef.current) a.play().catch(() => {});
-  }, [idx]); // eslint-disable-line react-hooks/exhaustive-deps
+    const audio = audioRef.current;
+    if (!audio) return;
 
-  const onEnded = () => setIdx((p) => (p + 1) % PLAYLIST.length);
+    audio.volume = 0.4;
+
+    if (playing) {
+      audio.load();
+      audio.play().catch(() => {});
+    }
+  }, [idx]);
+
+  const onEnded = () => {
+    setIdx((prev) => (prev + 1) % PLAYLIST.length);
+  };
 
   const toggle = () => {
-    const a = audioRef.current;
-    if (!a) return;
-    if (a.paused) {
-      a.volume = 0.4;
-      a.play().then(() => setPlaying(true)).catch(() => {});
+    const audio = audioRef.current;
+    if (!audio) return;
+
+    if (audio.paused) {
+      audio.play().then(() => setPlaying(true)).catch(() => {});
     } else {
-      a.pause();
+      audio.pause();
       setPlaying(false);
     }
   };
 
   return (
     <>
-      <audio ref={audioRef} src={PLAYLIST[idx]} onEnded={onEnded} preload="auto" data-testid="bg-audio" />
+      <audio
+        ref={audioRef}
+        src={PLAYLIST[idx]}
+        onEnded={onEnded}
+        preload="auto"
+        data-testid="bg-audio"
+      />
+
       <motion.button
         onClick={toggle}
         data-testid="music-toggle"
@@ -63,9 +92,16 @@ export const BackgroundMusic = () => {
         whileTap={{ scale: 0.92 }}
         className="fixed bottom-5 left-5 z-50 w-12 h-12 md:w-14 md:h-14 rounded-full glass flex items-center justify-center text-gold shadow-[0_4px_20px_rgba(212,175,55,0.25)]"
       >
-        {playing && <span className="absolute inset-0 rounded-full border border-gold/40 animate-ping" />}
+        {playing && (
+          <span className="absolute inset-0 rounded-full border border-gold/40 animate-ping" />
+        )}
+
         {playing ? (
-          <Pause className="w-5 h-5" strokeWidth={1.6} fill="currentColor" />
+          <Pause
+            className="w-5 h-5"
+            strokeWidth={1.6}
+            fill="currentColor"
+          />
         ) : (
           <Music className="w-5 h-5" strokeWidth={1.6} />
         )}
