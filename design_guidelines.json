@@ -1,0 +1,139 @@
+{
+  "theme": "light",
+  "typography": {
+    "headings": {
+      "family": "Cormorant Garamond, serif",
+      "weights": ["300", "500", "700"],
+      "usage": "Use for all headlines, section titles, and names. It gives a luxurious, romantic, and premium editorial feel.",
+      "scales": {
+        "h1": "text-5xl md:text-6xl+ tracking-tighter leading-none",
+        "h2": "text-4xl md:text-5xl tracking-tight",
+        "h3": "text-2xl md:text-3xl",
+        "h4": "text-xl md:text-2xl"
+      }
+    },
+    "body": {
+      "family": "Outfit, sans-serif",
+      "weights": ["300", "400"],
+      "usage": "Use for all body text, paragraphs, forms, and small UI elements. Clean, modern, highly legible.",
+      "scales": {
+        "base": "text-base leading-relaxed",
+        "sm": "text-sm uppercase tracking-[0.2em]"
+      }
+    },
+    "accent": {
+      "family": "Great Vibes, cursive",
+      "weights": ["400"],
+      "usage": "Use sparingly for romantic accents, like 'Manas & Kavita' signature or small love quotes."
+    }
+  },
+  "colors": {
+    "background": {
+      "primary": "#FFFAF8",
+      "secondary": "#FDF5F6"
+    },
+    "palette": {
+      "blushPink": "#F9E5E6",
+      "lavender": "#E6E6FA",
+      "peach": "#FFDAB9",
+      "beige": "#F5F5DC",
+      "gold": "#D4AF37",
+      "white": "#FFFFFF",
+      "textPrimary": "#2C2C2C",
+      "textSecondary": "#595959"
+    },
+    "gradients": {
+      "heroOverlay": "bg-gradient-to-b from-white/20 via-transparent to-[#FFFAF8]",
+      "glassBg": "bg-white/60"
+    }
+  },
+  "visual_enhancers": {
+    "glassmorphism": "backdrop-blur-xl bg-white/60 border border-white/50 shadow-[0_8px_32px_rgba(212,175,55,0.08)] rounded-3xl",
+    "shadows": {
+      "soft": "shadow-[0_4px_20px_rgba(0,0,0,0.04)]",
+      "glow": "shadow-[0_0_15px_rgba(212,175,55,0.3)]"
+    },
+    "borders": "rounded-full, rounded-3xl, delicate 1px border of gold/20 or white/60",
+    "decorations": "Floating hearts (framer-motion floating animation), floral border SVGs at section edges, sparkles/stars around headlines."
+  },
+  "layouts": {
+    "hero": "100vh full-screen. Centered content. Kinetic masked reveal on load.",
+    "gallery": "Asymmetric Bento Grid (grid-cols-1 md:grid-cols-12 gap-6) with varying spans to create a luxurious editorial feel.",
+    "timeline": "Vertical centered line, alternating left/right content blocks with Framer Motion scroll triggers.",
+    "general": "Generous spacing. py-24 to py-32 for sections to give breathing room. Container max-w-7xl mx-auto px-6."
+  },
+  "grids": {
+    "bento_art_mode": "grid-cols-1 md:grid-cols-12 gap-8. Images span multiple columns and rows to break monotony."
+  },
+  "motion": {
+    "scrolling": "Lenis for smooth momentum scrolling. It is mandatory for the premium feel.",
+    "reveals": "Framer Motion line-by-line text reveals on scroll (y: 50, opacity: 0 to y: 0, opacity: 1, stagger: 0.1).",
+    "micro_interactions": "Hover states on buttons (scale 1.05, shadow-glow), subtle continuous floating animations on decorative elements (hearts/sparkles) using repeat: Infinity, yoyo.",
+    "parallax": "Subtle background image parallax on the hero and gallery sections using useScroll and useTransform.",
+    "scratch_card": "Canvas-based or Framer Motion drag mask reveal for the wedding date scratch-off interaction."
+  },
+  "accessibility": {
+    "contrast": "Ensure #2C2C2C text has high contrast over pastel backgrounds. Avoid white text on blush pink.",
+    "reduced_motion": "Respect prefers-reduced-motion for all Framer animations.",
+    "testing": "All interactive buttons/links/forms MUST have data-testid attributes (e.g., data-testid='rsvp-submit-button')."
+  },
+  "media": {
+    "images": "High-quality, rounded corners (rounded-3xl or rounded-full for portraits). Max height 80vh on mobile.",
+    "icons": "Use lucide-react with thin stroke widths (strokeWidth={1}) for an elegant look. Heart, Calendar, MapPin, Sparkles."
+  },
+  "3d_libraries": {
+    "recommendation": "Use framer-motion for 2.5D parallax and floating elements. Avoid heavy 3D canvases to keep the site extremely fast and airy, fitting the romantic theme. If a 3D ring or petal particle system is desired, use tsparticles for lightweight floral confetti."
+  },
+  "image_urls": {
+    "hero_background": {
+      "url": "https://images.unsplash.com/photo-1543157145-f78c636d023d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwxfHxwYXN0ZWwlMjBmbG9yYWwlMjBiYWNrZ3JvdW5kJTIwd2VkZGluZ3xlbnwwfHx8fDE3ODcyOTU3MDd8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Dried red and cream flowers on white. Use as soft hero background texture.",
+      "category": "hero"
+    },
+    "couple_placeholder": {
+      "url": "https://images.unsplash.com/photo-1587271636175-90d58cdad458?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MTJ8MHwxfHNlYXJjaHw0fHxJbmRpYW4lMjB3ZWRkaW5nJTIwY291cGxlfGVufDB8fHx8MTc4NzI5NTcwN3ww&ixlib=rb-4.1.0&q=85",
+      "description": "Indian couple in traditional attire sitting under a floral canopy. Use as the main couple illustration/image.",
+      "category": "hero/gallery"
+    },
+    "haldi_ceremony": {
+      "url": "https://images.pexels.com/photos/33078527/pexels-photo-33078527.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Joyful Haldi ceremony. Use in the Wedding Event Timeline for the Haldi section.",
+      "category": "timeline"
+    },
+    "dj_night": {
+      "url": "https://images.pexels.com/photos/38446274/pexels-photo-38446274.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Vibrant indoor evening event with elegant lights. Use for the DJ Night section.",
+      "category": "timeline"
+    },
+    "reception": {
+      "url": "https://images.unsplash.com/photo-1712314947761-a8d718bd8c32?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzOTB8MHwxfHNlYXJjaHwxfHx3ZWRkaW5nJTIwcmVjZXB0aW9uJTIwZGVjb3IlMjBsdXh1cnl8ZW58MHx8fHwxNzg3Mjk1NzA3fDA&ixlib=rb-4.1.0&q=85",
+      "description": "Luxurious dining setup with chandeliers. Use for the Reception section.",
+      "category": "timeline"
+    }
+  },
+  "instructions_to_main_agent": [
+    "Install required dependencies: framer-motion, @studio-freight/lenis (or lenis), lucide-react, react-fast-marquee, canvas-confetti, clsx, tailwind-merge.",
+    "Implement Lenis smooth scrolling globally in the App wrapper.",
+    "Build a signature hero section with a masked text reveal ('Manas & Kavita' elegantly rising line-by-line).",
+    "Construct the Interactive Scratch Card using a simple HTML5 Canvas overlaid on the 'Save the Date / 24 Jan 2027' text. On drag/touch, clear the canvas pixels to reveal.",
+    "Design the Our Love Story and Wedding Event Timeline as vertical scrolling experiences with sticky dates and fade-in illustrations.",
+    "For the RSVP Form, use standard Shadcn/UI-like pure React components styled with glassmorphism (bg-white/60, backdrop-blur-xl). No real backend needed, just show a success toast or state on submit.",
+    "Include an editorial marquee (using react-fast-marquee) with pale pink background and gold/dark text reading romantic phrases or the wedding hashtag.",
+    "Do NOT use completely transparent backgrounds under the navigation header if content scrolls behind it. Use a glassmorphism nav bar.",
+    "Embed a stylized Google Map iframe for the Wedding Venue section, accompanied by a 'Get Directions' button.",
+    "Do NOT use 'Inter', 'Roboto', or 'Open Sans' for any text. Stick to 'Cormorant Garamond' and 'Outfit'."
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
+    "You tend to converge toward generic, 'on distribution' outputs. Make creative, distinctive frontends that surprise and delight.",
+    "Avoid generic centered layouts except in hero sections. Use asymmetry and generous spacing (p-8 to p-24) to create tension and luxury.",
+    "Create depth through layered design elements with z-index hierarchy and glassmorphism effects (12-24px blur).",
+    "Do not apply universal transitions like 'transition: all'. Target specific properties.",
+    "Do not center-align the whole app container (.App { text-align: center; }).",
+    "Always use modern button styles (pill-shaped or softly rounded, subtle gold/blush gradients, hover glow).",
+    "Never use AI assistant emojis for icons. Use lucide-react.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax, entrance animations.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "Prioritize using the provided image URLs. Do not use placeholder text for images.",
+    "All interactive elements MUST have data-testid attributes for testing."
+  ]
+}
