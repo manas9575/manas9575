@@ -12,21 +12,25 @@ export const IMG = {
 
 export const PLAYLIST = [
   "/vakratunda.mp3",
-  "/wedding-music.mp3",
+  "/sahilmadan.mp3",
 ];
 
 // Uploaded couple photos used for the hero background slideshow
 export const PHOTOS = [
   { src: "/couple/p1.jpeg", alt: "Manas & Kavita" },
-  { src: "/couple/p4.jpeg", alt: "Manas & Kavita by the lake" },
-  { src: "/couple/p3.jpeg", alt: "Manas & Kavita at the temple" },
+  { src: "/couple/p4.jpeg", alt: "Manas & Kavita" },
+  { src: "/couple/p5.jpeg", alt: "Manas & Kavita" },
+  { src: "/couple/p3.jpeg", alt: "Manas & Kavita" },
+  { src: "/couple/p8.jpeg", alt: "Manas & Kavita" },
   { src: "/couple/p2.jpeg", alt: "Manas & Kavita" },
+  { src: "/couple/p6.jpeg", alt: "Manas & Kavita" },
+  { src: "/couple/p7.jpeg", alt: "Manas & Kavita" },
 ];
 
 export const COUPLE = {
   groom: "Manas",
   bride: "Kavita",
-  hashtag: "#Manuwedskavii",
+  hashtag: "#ManuWedsKavii",
   tagline: "Two souls, one beautiful journey",
 };
 
@@ -99,9 +103,9 @@ export const EVENTS = [
 ];
 
 export const FAMILY = [
-  { side: "Groom's Family", name: "Mr. & Mrs. Khokhavat", relation: "Proud Parents of Manas", initials: "K" },
-  { side: "Groom's Side", name: "The Khokhavat Family", relation: "Brothers, Sisters & Loved Ones", initials: "K" },
-  { side: "Bride's Family", name: "Parents of Kavita", relation: "Loving Mother & Father", initials: "K" },
+  { side: "Groom's Parents", name: "Nageshwar & Shyama Bai", relation: "Parents of Manas", initials: "N" },
+  { side: "Groom's Grandparents", name: "Shivnarayan & Chanda Bai", relation: "Blessings of the elders", initials: "S" },
+  { side: "Bride's Parents", name: "Dinesh Hathiya Patidar & Vidhya Bai", relation: "Parents of Kavita", initials: "D" },
 ];
 
 export const FAQS = [

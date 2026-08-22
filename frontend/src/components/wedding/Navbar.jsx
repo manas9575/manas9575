@@ -7,7 +7,7 @@ const LINKS = [
   { label: "Events", id: "events" },
   { label: "Venue", id: "venue" },
   { label: "Family", id: "family" },
-  { label: "RSVP", id: "rsvp" },
+  { label: "Guestbook", id: "guestbook" },
 ];
 
 export const Navbar = () => {
@@ -58,11 +58,11 @@ export const Navbar = () => {
             </button>
           ))}
           <button
-            onClick={() => go("rsvp")}
-            data-testid="nav-rsvp-cta"
+            onClick={() => go("events")}
+            data-testid="nav-events-cta"
             className="px-6 py-2.5 rounded-full bg-[#2C2C2C] text-white text-xs uppercase tracking-[0.2em] hover:bg-gold transition-colors duration-300"
           >
-            RSVP
+            Celebrations
           </button>
         </div>
 

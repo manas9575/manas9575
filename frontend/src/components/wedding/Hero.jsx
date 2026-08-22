@@ -79,11 +79,11 @@ export const Hero = () => {
               <span className="font-body tracking-[0.15em] text-sm text-[#2C2C2C]">24 · 01 · 2027 · RATLAM</span>
             </div>
             <button
-              onClick={() => window.__lenis?.scrollTo(document.getElementById("rsvp"), { offset: -70 })}
-              data-testid="hero-rsvp-button"
+              onClick={() => window.__lenis?.scrollTo(document.getElementById("events"), { offset: -70 })}
+              data-testid="hero-events-button"
               className="group px-8 py-3.5 rounded-full bg-[#2C2C2C] text-white font-body text-sm uppercase tracking-[0.2em] hover:bg-gold transition-all duration-300 hover:shadow-[0_0_25px_rgba(212,175,55,0.4)] hover:scale-105"
             >
-              RSVP Now
+              View Celebrations
             </button>
           </motion.div>
 
