@@ -6,7 +6,7 @@ import { SectionHeading } from "./shared";
 export const Family = () => (
   <section id="family" className="relative section-pad bg-[#FDF5F6]" data-testid="family-section">
     <div className="max-w-7xl mx-auto px-6">
-      <SectionHeading eyebrow="With Love & Blessings" title="Meet The Family" subtitle="With the blessings of the Patidar Khokhawat family & the Patidar family, we invite you to share in our joy." />
+      <SectionHeading eyebrow="With Love & Blessings" title="Khokhavat Patidar Family Welcomes You" subtitle="With the blessings of both our families, we warmly invite you to share in our joy." />
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {FAMILY.map((f, i) => (
