@@ -7,7 +7,10 @@ export const IMG = {
   wedding: "https://static.prod-images.emergentagent.com/jobs/086bbd86-1a0f-445b-8bee-59b7d3245cc4/images/d44bd93771005aedea89ef57d635f5f1b7c219ea284e2bd6234b3d2d2c8c558f.jpeg",
   reception: "https://static.prod-images.emergentagent.com/jobs/086bbd86-1a0f-445b-8bee-59b7d3245cc4/images/2f730b9e56c6bde5a3db82201694a76bf3154657ebc021f54b59cfe1f2f227b7.jpeg",
   floralDivider: "https://static.prod-images.emergentagent.com/jobs/086bbd86-1a0f-445b-8bee-59b7d3245cc4/images/2df416f63b2ad77ee82ab124865f643bacfad670d3b913b786abc0837751b18a.jpeg",
+  ganesh: "https://static.prod-images.emergentagent.com/jobs/086bbd86-1a0f-445b-8bee-59b7d3245cc4/images/c15a5738b2ae28853abd1c340c0855855e1aa9dcb2bcf8f95e7e26132dbb77c5.jpeg",
 };
+
+export const MUSIC = "/wedding-music.mp3";
 
 export const COUPLE = {
   groom: "Manas",
@@ -41,6 +44,7 @@ export const EVENTS = [
     desc: "A morning drenched in turmeric, laughter and marigold. Join us as we shower Manas with golden blessings.",
     note: "Groom's celebration",
     accent: "#8EC5E8",
+    cal: { start: "20270122T043000Z", end: "20270122T073000Z", location: "Gondi Dharamsi, Tehsil Jaora, Dist. Ratlam, MP 457336" },
   },
   {
     id: "wedding",
@@ -53,6 +57,7 @@ export const EVENTS = [
     desc: "The sacred pheras. Bride in red, groom in cream, seven vows and a lifetime of togetherness under the mandap.",
     note: "Manas weds Kavita",
     accent: "#E4899B",
+    cal: { start: "20270124T023000Z", end: "20270124T083000Z", location: "Hatanara, Tehsil Piploda, Dist. Ratlam, MP" },
   },
   {
     id: "dj",
@@ -65,6 +70,7 @@ export const EVENTS = [
     desc: "Dim the lights, turn up the bass. A glamorous night of dancing, dhol and dazzle under the stage lights.",
     note: "Manas & Kavita",
     accent: "#C3A6F5",
+    cal: { start: "20270124T133000Z", end: "20270124T173000Z", location: "Gondi Dharamsi, Tehsil Jaora, Dist. Ratlam, MP 457336" },
   },
   {
     id: "reception",
@@ -77,6 +83,7 @@ export const EVENTS = [
     desc: "An evening of elegance, fine dining and celebration as we toast to the newlyweds in style.",
     note: "Manas & Kavita",
     accent: "#D4AF37",
+    cal: { start: "20270125T133000Z", end: "20270125T173000Z", location: "Gondi Dharamsi, Tehsil Jaora, Dist. Ratlam, MP 457336" },
   },
 ];
 

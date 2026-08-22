@@ -1,7 +1,18 @@
 import { motion } from "framer-motion";
-import { Calendar, Clock, Shirt, Sparkles } from "lucide-react";
+import { Calendar, Clock, Shirt, Sparkles, CalendarPlus } from "lucide-react";
 import { EVENTS } from "../../data/weddingData";
 import { SectionHeading, FloatingHearts } from "./shared";
+
+const gcalUrl = (ev) => {
+  const p = new URLSearchParams({
+    action: "TEMPLATE",
+    text: `Manas & Kavita — ${ev.name}`,
+    dates: `${ev.cal.start}/${ev.cal.end}`,
+    details: ev.desc,
+    location: ev.cal.location,
+  });
+  return `https://calendar.google.com/calendar/render?${p.toString()}`;
+};
 
 const EventCard = ({ ev, index }) => {
   const flip = index % 2 === 1;
@@ -47,6 +58,18 @@ const EventCard = ({ ev, index }) => {
           <Detail icon={Clock} label={ev.time} flip={flip} />
           <Detail icon={Shirt} label={ev.dress} flip={flip} />
         </div>
+
+        <a
+          href={gcalUrl(ev)}
+          target="_blank"
+          rel="noopener noreferrer"
+          data-testid={`add-to-calendar-${ev.id}`}
+          className="group mt-6 inline-flex items-center gap-3 rounded-full px-6 py-3 text-white font-body text-xs uppercase tracking-[0.2em] transition-all duration-300 hover:shadow-lg hover:scale-105"
+          style={{ background: ev.accent }}
+        >
+          <CalendarPlus className="w-4 h-4 group-hover:rotate-12 transition-transform" strokeWidth={1.6} />
+          Add to Calendar
+        </a>
       </div>
     </motion.div>
   );

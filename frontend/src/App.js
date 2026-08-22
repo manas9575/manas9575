@@ -1,6 +1,8 @@
 import "@/App.css";
 import { useLenis } from "@/hooks/useLenis";
 import { Navbar } from "@/components/wedding/Navbar";
+import { GaneshBlessing } from "@/components/wedding/GaneshBlessing";
+import { BackgroundMusic } from "@/components/wedding/BackgroundMusic";
 import { Hero } from "@/components/wedding/Hero";
 import { MarqueeStrip } from "@/components/wedding/MarqueeStrip";
 import { Countdown } from "@/components/wedding/Countdown";
@@ -22,7 +24,9 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+      <BackgroundMusic />
       <main>
+        <GaneshBlessing />
         <Hero />
         <MarqueeStrip />
         <Countdown />

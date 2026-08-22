@@ -66,6 +66,9 @@ body {
 .font-script {
     font-family: "Great Vibes", cursive;
 }
+.font-devanagari {
+    font-family: "Tiro Devanagari Hindi", serif;
+}
 
 /* Lenis */
 html.lenis,
