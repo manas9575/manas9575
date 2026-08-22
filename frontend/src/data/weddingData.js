@@ -103,10 +103,10 @@ export const EVENTS = [
 ];
 
 export const FAMILY = [
-  { side: "Groom's Parents", name: "Nageshwar Khokhavat Ji & Shyama Bai", relation: "Parents of Manas", initials: "N" },
-  { side: "Groom's Grandparents", name: "Shivnarayan Khokhavat Ji & Chanda Bai", relation: "Blessings of the elders", initials: "S" },
-  { side: "Bride's Parents", name: "Dinesh Hathiya Patidar Ji & Vidhya Bai", relation: "Parents of Kavita", initials: "D" },
-  { side: "With Warm Love", name: "Khokhavat Patidar Parivaar", relation: "Uncles, Aunties, Bade Papa, Bhua & all Cousins", initials: "P" },
+  { side: "Groom's Parents", name: "Nageshwar Khokhawat Ji & Shyama Bai", relation: "Parents of Manas", initials: "NS" },
+  { side: "Groom's Grandparents", name: "Shivnarayan Khokhawat Ji & Chanda Bai", relation: "Blessings of the elders", initials: "SC" },
+  { side: "Bride's Parents", name: "Dinesh Hathiya Patidar Ji & Vidhya Bai", relation: "Parents of Kavita", initials: "DV" },
+  { side: "With Warm Love", name: "Khokhawat Patidar Parivaar", relation: "Khokhawat Pariwar & all Cousins", initials: "K" },
 ];
 
 export const FAQS = [

@@ -4,9 +4,9 @@ import { Heart, PenLine, Send } from "lucide-react";
 import { SectionHeading, FloatingHearts } from "./shared";
 
 const SEED = [
-  { name: "Aarav & Riya", msg: "So happy for you both! Wishing you a lifetime of love and laughter. 💕", color: "#F9E5E6" },
-  { name: "Neha Kapoor", msg: "Manas & Kavita — a match made in heaven. Can't wait to dance at the DJ Night!", color: "#E6E6FA" },
-  { name: "The Sharmas", msg: "May your journey together be as beautiful as your love story. Blessings always.", color: "#FFDAB9" },
+  { name: "Abhishek & Ravina", msg: "So happy for you both! Wishing you a lifetime of love and laughter. 💕", color: "#F9E5E6" },
+  { name: "Hema & Arun", msg: "Manas & Kavita — a match made in heaven. Can't wait to dance at the DJ Night!", color: "#E6E6FA" },
+  { name: "Preety & Durgesh", msg: "May your journey together be as beautiful as your love story. Blessings always.", color: "#FFDAB9" },
 ];
 
 export const Guestbook = () => {
