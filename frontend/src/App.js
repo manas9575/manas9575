@@ -8,7 +8,6 @@ import { MarqueeStrip } from "@/components/wedding/MarqueeStrip";
 import { Countdown } from "@/components/wedding/Countdown";
 import { EventTimeline } from "@/components/wedding/EventTimeline";
 import { ScratchCard } from "@/components/wedding/ScratchCard";
-import { Gallery } from "@/components/wedding/Gallery";
 import { RSVP } from "@/components/wedding/RSVP";
 import { Venue } from "@/components/wedding/Venue";
 import { Family } from "@/components/wedding/Family";
@@ -32,7 +31,6 @@ function App() {
         <Countdown />
         <EventTimeline />
         <ScratchCard />
-        <Gallery />
         <DressCode />
         <RSVP />
         <Venue />

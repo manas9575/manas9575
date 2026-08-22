@@ -10,7 +10,18 @@ export const IMG = {
   ganesh: "https://static.prod-images.emergentagent.com/jobs/086bbd86-1a0f-445b-8bee-59b7d3245cc4/images/c15a5738b2ae28853abd1c340c0855855e1aa9dcb2bcf8f95e7e26132dbb77c5.jpeg",
 };
 
-export const MUSIC = "/wedding-music.mp3";
+export const PLAYLIST = [
+  "/vakratunda.mp3",
+  "/wedding-music.mp3",
+];
+
+// Uploaded couple photos used for the hero background slideshow
+export const PHOTOS = [
+  { src: "/couple/p1.jpeg", alt: "Manas & Kavita" },
+  { src: "/couple/p4.jpeg", alt: "Manas & Kavita by the lake" },
+  { src: "/couple/p3.jpeg", alt: "Manas & Kavita at the temple" },
+  { src: "/couple/p2.jpeg", alt: "Manas & Kavita" },
+];
 
 export const COUPLE = {
   groom: "Manas",

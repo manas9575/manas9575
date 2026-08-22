@@ -5,7 +5,6 @@ import { COUPLE } from "../../data/weddingData";
 
 const LINKS = [
   { label: "Events", id: "events" },
-  { label: "Gallery", id: "gallery" },
   { label: "Venue", id: "venue" },
   { label: "Family", id: "family" },
   { label: "RSVP", id: "rsvp" },
