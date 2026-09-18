@@ -8,6 +8,13 @@ export const BackgroundMusic = () => {
   const [playing, setPlaying] = useState(false);
   const [idx, setIdx] = useState(0);
 
+  // Keep a ref in sync with `playing` so effects can read the latest
+  // value without needing it in their dependency array.
+  const playingRef = useRef(playing);
+  useEffect(() => {
+    playingRef.current = playing;
+  }, [playing]);
+
   // Autoplay on page load
   useEffect(() => {
     const audio = audioRef.current;
@@ -49,7 +56,7 @@ export const BackgroundMusic = () => {
 
     audio.volume = 0.4;
 
-    if (playing) {
+    if (playingRef.current) {
       audio.load();
       audio.play().catch(() => {});
     }
