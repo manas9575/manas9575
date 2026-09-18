@@ -1,5 +1,9 @@
 // All wedding content in one place — easy to edit.
 
+// ============================================================
+// IMAGES
+// ============================================================
+
 export const IMG = {
   heroCouple:
     "https://static.prod-images.emergentagent.com/jobs/086bbd86-1a0f-445b-8bee-59b7d3245cc4/images/635d37d34edf72397b2c8a861b64329c5c3794f8ac49d6d734904a2459eab88a.jpeg",
@@ -23,22 +27,60 @@ export const IMG = {
     "https://static.prod-images.emergentagent.com/jobs/086bbd86-1a0f-445b-8bee-59b7d3245cc4/images/c15a5738b2ae28853abd1c340c0855855e1aa9dcb2bcf8f95e7e26132dbb77c5.jpeg",
 };
 
+
+// ============================================================
+// MUSIC
+// ============================================================
+
 export const PLAYLIST = [
   "/vakratunda.mp3",
   "/sahilmadan.mp3",
 ];
 
-// Uploaded couple photos used for the hero background slideshow
+
+// ============================================================
+// COUPLE PHOTOS
+// ============================================================
+
 export const PHOTOS = [
-  { src: "/couple/p1.jpeg", alt: "Manas & Kavita" },
-  { src: "/couple/p4.jpeg", alt: "Manas & Kavita" },
-  { src: "/couple/p5.jpeg", alt: "Manas & Kavita" },
-  { src: "/couple/p3.jpeg", alt: "Manas & Kavita" },
-  { src: "/couple/p8.jpeg", alt: "Manas & Kavita" },
-  { src: "/couple/p2.jpeg", alt: "Manas & Kavita" },
-  { src: "/couple/p6.jpeg", alt: "Manas & Kavita" },
-  { src: "/couple/p7.jpeg", alt: "Manas & Kavita" },
+  {
+    src: "/couple/p1.jpeg",
+    alt: "Manas & Kavita",
+  },
+  {
+    src: "/couple/p4.jpeg",
+    alt: "Manas & Kavita",
+  },
+  {
+    src: "/couple/p5.jpeg",
+    alt: "Manas & Kavita",
+  },
+  {
+    src: "/couple/p3.jpeg",
+    alt: "Manas & Kavita",
+  },
+  {
+    src: "/couple/p8.jpeg",
+    alt: "Manas & Kavita",
+  },
+  {
+    src: "/couple/p2.jpeg",
+    alt: "Manas & Kavita",
+  },
+  {
+    src: "/couple/p6.jpeg",
+    alt: "Manas & Kavita",
+  },
+  {
+    src: "/couple/p7.jpeg",
+    alt: "Manas & Kavita",
+  },
 ];
+
+
+// ============================================================
+// COUPLE
+// ============================================================
 
 export const COUPLE = {
   groom: "Manas",
@@ -47,56 +89,85 @@ export const COUPLE = {
   tagline: "Two souls, one beautiful journey",
 };
 
-// Wedding day used for countdown & scratch card
+
+// ============================================================
+// WEDDING DATE
+// ============================================================
+
 export const WEDDING_DATE = "2027-01-24T08:00:00";
 
-// Wedding Gallery
+
+// ============================================================
+// GALLERY
+// ============================================================
+
 export const GALLERY = [
   {
-    src: "https://images.unsplash.com/photo-1724280120520-c52b4c1170fd?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
+    src:
+      "https://images.unsplash.com/photo-1724280120520-c52b4c1170fd?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
     span: "md:col-span-5 md:row-span-2",
     alt: "Manas and Kavita in traditional attire",
   },
+
   {
-    src: "https://images.unsplash.com/photo-1735052712464-9d24b69be5f5?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
+    src:
+      "https://images.unsplash.com/photo-1735052712464-9d24b69be5f5?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
     span: "md:col-span-4",
     alt: "Pre-wedding shoot in the woods",
   },
+
   {
-    src: "https://images.pexels.com/photos/36683124/pexels-photo-36683124.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    src:
+      "https://images.pexels.com/photos/36683124/pexels-photo-36683124.jpeg?auto=compress&cs=tinysrgb&w=1200",
     span: "md:col-span-3",
     alt: "A loving embrace",
   },
+
   {
-    src: "https://images.unsplash.com/photo-1587271636175-90d58cdad458?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
+    src:
+      "https://images.unsplash.com/photo-1587271636175-90d58cdad458?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
     span: "md:col-span-3",
     alt: "Under the floral canopy",
   },
+
   {
-    src: "https://images.unsplash.com/photo-1720105761832-927de5f2ecce?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
+    src:
+      "https://images.unsplash.com/photo-1720105761832-927de5f2ecce?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
     span: "md:col-span-4",
     alt: "Together forever",
   },
+
   {
-    src: "https://images.pexels.com/photos/32149830/pexels-photo-32149830.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    src:
+      "https://images.pexels.com/photos/32149830/pexels-photo-32149830.jpeg?auto=compress&cs=tinysrgb&w=1200",
     span: "md:col-span-5",
     alt: "Romantic moment",
   },
 ];
 
-// Wedding Events
-// Order: Haldi, Wedding, Cocktail Party, Reception
+
+// ============================================================
+// WEDDING EVENTS
+// Order: Haldi → Wedding → Cocktail Party → Reception
+//
+// Only Haldi has a fixed color theme.
+// All other events have traditional / personal-choice attire.
+// ============================================================
 
 export const EVENTS = [
   {
     id: "haldi",
+
     name: "Haldi",
+
     img: IMG.haldi,
+
     date: "22 January 2027",
+
     time: "10:00 AM onwards",
+
     day: "Friday",
 
-    // Only Haldi has a specific dress theme
     dress: "Light Sky Blue",
 
     desc:
@@ -114,19 +185,28 @@ export const EVENTS = [
     },
   },
 
+
+  // ----------------------------------------------------------
+  // WEDDING
+  // ----------------------------------------------------------
+
   {
     id: "wedding",
+
     name: "The Wedding",
+
     img: IMG.wedding,
+
     date: "24 January 2027",
+
     time: "Morning to Day",
+
     day: "Sunday",
 
-    // No fixed dress code
     dress: "Traditional Indian Attire",
 
     desc:
-      "The most beautiful chapter begins with sacred pheras, heartfelt blessings and seven vows. Join Manas and Kavita as they begin their journey together under the mandap surrounded by family, friends and loved ones.",
+      "The most beautiful chapter begins with sacred pheras, heartfelt blessings and seven vows. Join Manas and Kavita as they begin their journey together under the mandap, surrounded by family, friends and loved ones.",
 
     note: "Manas weds Kavita",
 
@@ -140,19 +220,28 @@ export const EVENTS = [
     },
   },
 
+
+  // ----------------------------------------------------------
+  // COCKTAIL PARTY
+  // ----------------------------------------------------------
+
   {
     id: "cocktail",
+
     name: "Cocktail Party",
+
     img: IMG.djNight,
+
     date: "24 January 2027",
+
     time: "07:00 PM onwards",
+
     day: "Sunday Evening",
 
-    // Guests' choice
     dress: "Your Choice",
 
     desc:
-      "As the celebrations continue, join us for an evening of music, laughter, delicious food and unforgettable moments. Come dressed in whatever makes you feel your best and celebrate the newlyweds with us.",
+      "As the celebrations continue, join us for an evening of music, laughter, delicious food and unforgettable moments. Come dressed in whatever you love and raise a toast to Manas & Kavita.",
 
     note: "An evening of celebration",
 
@@ -166,15 +255,24 @@ export const EVENTS = [
     },
   },
 
+
+  // ----------------------------------------------------------
+  // RECEPTION
+  // ----------------------------------------------------------
+
   {
     id: "reception",
+
     name: "Reception",
+
     img: IMG.reception,
+
     date: "25 January 2027",
+
     time: "07:00 PM onwards",
+
     day: "Monday Evening",
 
-    // Guests' choice
     dress: "Your Choice",
 
     desc:
@@ -193,7 +291,11 @@ export const EVENTS = [
   },
 ];
 
-// Family
+
+// ============================================================
+// FAMILY
+// ============================================================
+
 export const FAMILY = [
   {
     side: "Groom's Parents",
@@ -225,89 +327,117 @@ export const FAMILY = [
   },
 ];
 
+
+// ============================================================
 // FAQ
+// ============================================================
+
 export const FAQS = [
   {
     q: "When should I RSVP by?",
+
     a:
       "Kindly RSVP before 5th January 2027 so we can make sure everything is perfect for you.",
   },
 
   {
     q: "Can I bring a plus one?",
+
     a:
       "We'd love to celebrate with your loved ones! Please indicate the number of guests in your RSVP form.",
   },
 
   {
     q: "Will the events be indoors?",
+
     a:
       "The Haldi is outdoors in the morning, while the Wedding, Cocktail Party and Reception will be held at beautifully decorated venues.",
   },
 
   {
     q: "Are children welcome?",
+
     a:
       "Absolutely! We adore little ones. Please include them in your guest count so we can arrange for them.",
   },
 
   {
     q: "Is there parking at the venue?",
+
     a:
       "Yes, ample parking is available at both venues for all guests.",
   },
 ];
 
-// Dress Code
-// Only Haldi has a fixed color.
-// All other events are open to guests' personal choice.
+
+// ============================================================
+// DRESS CODE
+//
+// ONLY HALDI HAS A FIXED COLOR.
+//
+// Wedding, Cocktail Party and Reception:
+// Guests can wear whatever they like.
+// ============================================================
 
 export const DRESS_CODE = [
   {
     event: "Haldi",
+
     palette: [
       "#8EC5E8",
       "#BFE0F5",
       "#EAF6FD",
     ],
+
     note: "Light sky blue",
   },
 
   {
     event: "Wedding",
+
     palette: [
       "#D4AF37",
       "#E8CFA8",
       "#F5EBD0",
     ],
+
     note: "Traditional Indian attire — your choice",
   },
 
   {
     event: "Cocktail Party",
+
     palette: [
       "#6B4F3A",
       "#8C6A4A",
       "#B08D57",
     ],
+
     note: "Your choice — festive & comfortable",
   },
 
   {
     event: "Reception",
+
     palette: [
       "#D4AF37",
       "#F5EBD0",
       "#E6D5B8",
     ],
+
     note: "Your choice — dress to celebrate",
   },
 ];
 
-// Venues
+
+// ============================================================
+// VENUES
+// ============================================================
+
 export const VENUES = [
   {
     name: "Wedding Venue — Hatanara",
+
     tag: "The Wedding · 24 Jan",
 
     address:
