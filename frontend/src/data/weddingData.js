@@ -46,7 +46,7 @@ export const GALLERY = [
   { src: "https://images.pexels.com/photos/32149830/pexels-photo-32149830.jpeg?auto=compress&cs=tinysrgb&w=1200", span: "md:col-span-5", alt: "Romantic moment" },
 ];
 
-// Order: Haldi, Wedding, DJ Night, Reception
+// Order: Haldi, Wedding, After Wed Cocktail, Reception
 export const EVENTS = [
   {
     id: "haldi",
@@ -75,8 +75,8 @@ export const EVENTS = [
     cal: { start: "20270124T023000Z", end: "20270124T083000Z", location: "Hatanara, Tehsil Piploda, Dist. Ratlam, MP" },
   },
   {
-    id: "dj",
-    name: "DJ Night",
+    id: "cocktail",
+    name: "After Wed Cocktail",
     img: IMG.djNight,
     date: "24 January 2027",
     time: "07:00 PM onwards",
@@ -112,16 +112,16 @@ export const FAMILY = [
 export const FAQS = [
   { q: "When should I RSVP by?", a: "Kindly RSVP before 5th January 2027 so we can make sure everything is perfect for you." },
   { q: "Can I bring a plus one?", a: "We'd love to celebrate with your loved ones! Please indicate the number of guests in your RSVP form." },
-  { q: "Will the events be indoors?", a: "The Haldi is outdoors in the morning, while the DJ Night, Wedding and Reception are held in beautifully decorated venues." },
+  { q: "Will the events be indoors?", a: "The Haldi is outdoors in the morning, while the After Wed Cocktail, Wedding and Reception are held in beautifully decorated venues." },
   { q: "Are children welcome?", a: "Absolutely! We adore little ones. Please include them in your guest count so we can arrange for them." },
   { q: "Is there parking at the venue?", a: "Yes, ample parking is available at both venues for all guests." },
 ];
 
-// Haldi: light sky blue primary. DJ Night: dark. Wedding & Reception: guests' choice.
+// Haldi: light sky blue primary. After Wed Cocktail: dark. Wedding & Reception: guests' choice.
 export const DRESS_CODE = [
   { event: "Haldi", palette: ["#8EC5E8", "#BFE0F5", "#EAF6FD"], note: "Primary: light sky blue" },
   { event: "Wedding", palette: ["#E4899B", "#D4AF37", "#F5EBD0"], note: "Wear whatever you love" },
-  { event: "DJ Night", palette: ["#2C2C2C", "#3A2A5A", "#1A1A2E"], note: "Dark shades & sparkle" },
+  { event: "After Wed Cocktail", palette: ["#2C2C2C", "#3A2A5A", "#1A1A2E"], note: "Dark shades & sparkle" },
   { event: "Reception", palette: ["#F5F5DC", "#D4AF37", "#E6E6FA"], note: "Your choice, dress to impress" },
 ];
 
@@ -135,7 +135,7 @@ export const VENUES = [
   },
   {
     name: "Gondi Dharamsi",
-    tag: "Haldi · DJ Night · Reception",
+    tag: "Haldi · After Wed Cocktail · Reception",
     address: "Gondi Dharamsi, Tehsil Jaora, Dist. Ratlam, Madhya Pradesh 457336, IN",
     mapsEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d616.4392946940687!2d75.2358521662536!3d23.763851807625215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396417d85dc77739%3A0x97cbce553862c468!2z4KS44KSw4KSm4KS-4KSwIOCkquCkn-Clh-CksiDgpKfgpLDgpY3gpK7gpLbgpL7gpLLgpL4g4KSX4KWL4KSC4KSm4KWAIOCkp-CksOCljeCkruCkuOClgA!5e1!3m2!1sen!2sin!4v1787295621818!5m2!1sen!2sin",
     directions: "https://www.google.com/maps/dir/?api=1&destination=23.763851807625215,75.2358521662536",
