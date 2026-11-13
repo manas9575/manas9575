@@ -366,7 +366,7 @@ export const VENUES = [
     name: "Gondi Dharamsi",
     tag: "Mata Ji Pujan · Haldi · After Wed Cocktail · Reception",
     address: "Gondi Dharamsi, Tehsil Jaora, Dist. Ratlam, Madhya Pradesh 457336, IN",
-    mapsEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d616.4392946940687!2d75.2358521662536!3d23.763851807625215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396417d85dc77739%3A0x97cbce553862c468!5e1!3m2!1sen!2sin",
+    mapsEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3275.9214416993336!2d75.23425227475097!3d23.76394938825735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396417d85dc77739%3A0x97cbce553862c468!2sSardar%20Patel%20Dharamshala%20Gondi%20Dharamsi!5e1!3m2!1sen!2sin!4v1794556218938!5m2!1sen!2sin",
     directions: "https://www.google.com/maps/dir/?api=1&destination=23.763851807625215,75.2358521662536",
   },
 ];
