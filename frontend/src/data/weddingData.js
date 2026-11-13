@@ -1,6 +1,10 @@
 
-// All wedding content in one place — easy to edit.
+// ============================================
+// WEDDING WEBSITE CONTENT CONFIGURATION
+// Manas & Kavita | #ManuWedsKavii
+// ============================================
 
+// 1. IMAGES
 export const IMG = {
   heroCouple: "https://static.prod-images.emergentagent.com/jobs/086bbd86-1a0f-445b-8bee-59b7d3245cc4/images/635d37d34edf72397b2c8a861b64329c5c3794f8ac49d6d734904a2459eab88a.jpeg",
   haldi: "https://static.prod-images.emergentagent.com/jobs/086bbd86-1a0f-445b-8bee-59b7d3245cc4/images/905c350b899355dac8f2a51d2f14418294b822247dd9dcee480d555d671ef8d5.jpeg",
@@ -11,12 +15,13 @@ export const IMG = {
   ganesh: "https://static.prod-images.emergentagent.com/jobs/086bbd86-1a0f-445b-8bee-59b7d3245cc4/images/c15a5738b2ae28853abd1c340c0855855e1aa9dcb2bcf8f95e7e26132dbb77c5.jpeg",
 };
 
+// 2. PLAYLIST
 export const PLAYLIST = [
   "/vakratunda.mp3",
   "/sahilmadan.mp3",
 ];
 
-// Uploaded couple photos used for the hero background slideshow
+// 3. COUPLE PHOTOS
 export const PHOTOS = [
   { src: "/couple/p1.jpeg", alt: "Manas & Kavita" },
   { src: "/couple/p4.jpeg", alt: "Manas & Kavita" },
@@ -28,6 +33,7 @@ export const PHOTOS = [
   { src: "/couple/p7.jpeg", alt: "Manas & Kavita" },
 ];
 
+// 4. COUPLE DETAILS
 export const COUPLE = {
   groom: "Manas",
   bride: "Kavita",
@@ -35,44 +41,47 @@ export const COUPLE = {
   tagline: "Two souls, one beautiful journey",
 };
 
-// Main wedding date: 24 January 2027
+// 5. MAIN WEDDING DATE
 export const WEDDING_DATE = "2027-01-24T08:00:00";
 
-// Gallery images
+// 6. GALLERY
 export const GALLERY = [
   {
     src: "https://images.unsplash.com/photo-1724280120520-c52b4c1170fd?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
     span: "md:col-span-5 md:row-span-2",
-    alt: "Manas and Kavita in traditional attire"
+    alt: "Manas and Kavita in traditional attire",
   },
   {
     src: "https://images.unsplash.com/photo-1735052712464-9d24b69be5f5?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
     span: "md:col-span-4",
-    alt: "Pre-wedding shoot in the woods"
+    alt: "Pre-wedding shoot in the woods",
   },
   {
     src: "https://images.pexels.com/photos/36683124/pexels-photo-36683124.jpeg?auto=compress&cs=tinysrgb&w=1200",
     span: "md:col-span-3",
-    alt: "A loving embrace"
+    alt: "A loving embrace",
   },
   {
     src: "https://images.unsplash.com/photo-1587271636175-90d58cdad458?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
     span: "md:col-span-3",
-    alt: "Under the floral canopy"
+    alt: "Under the floral canopy",
   },
   {
     src: "https://images.unsplash.com/photo-1720105761832-927de5f2ecce?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
     span: "md:col-span-4",
-    alt: "Together forever"
+    alt: "Together forever",
   },
   {
     src: "https://images.pexels.com/photos/32149830/pexels-photo-32149830.jpeg?auto=compress&cs=tinysrgb&w=1200",
     span: "md:col-span-5",
-    alt: "Romantic moment"
+    alt: "Romantic moment",
   },
 ];
 
-// Event order: Mata Ji Pujan, Haldi, Wedding, After Wed Cocktail, Reception
+// 7. EVENTS
+// Order: Mata Ji Pujan, Haldi, Wedding,
+// After Wed Cocktail, Reception
+
 export const EVENTS = [
   {
     id: "mataji",
@@ -81,16 +90,17 @@ export const EVENTS = [
     date: "20 January 2027",
     time: "09:00 AM onwards",
     day: "Wednesday",
-    dress: "White, Off-White, Cream, Light Grey, Maroon & Red",
+    dress: "Traditional light colours and festive shades",
     desc: "With divine blessings, we begin our wedding celebrations. Join us for the sacred Mata Ji Pujan, filled with devotion, love and family traditions.",
     note: "Seeking divine blessings",
     accent: "#800000",
     cal: {
       start: "20270120T033000Z",
       end: "20270120T053000Z",
-      location: "Gondi Dharamsi, Tehsil Jaora, Dist. Ratlam, MP 457336"
+      location: "Gondi Dharamsi, Tehsil Jaora, Dist. Ratlam, MP 457336",
     },
   },
+
   {
     id: "haldi",
     name: "Haldi",
@@ -105,9 +115,10 @@ export const EVENTS = [
     cal: {
       start: "20270122T043000Z",
       end: "20270122T073000Z",
-      location: "Gondi Dharamsi, Tehsil Jaora, Dist. Ratlam, MP 457336"
+      location: "Gondi Dharamsi, Tehsil Jaora, Dist. Ratlam, MP 457336",
     },
   },
+
   {
     id: "wedding",
     name: "The Wedding",
@@ -122,9 +133,10 @@ export const EVENTS = [
     cal: {
       start: "20270124T023000Z",
       end: "20270124T083000Z",
-      location: "Hatanara, Tehsil Piploda, Dist. Ratlam, MP"
+      location: "Hatanara, Tehsil Piploda, Dist. Ratlam, MP",
     },
   },
+
   {
     id: "cocktail",
     name: "After Wed Cocktail",
@@ -139,9 +151,10 @@ export const EVENTS = [
     cal: {
       start: "20270124T133000Z",
       end: "20270124T173000Z",
-      location: "Gondi Dharamsi, Tehsil Jaora, Dist. Ratlam, MP 457336"
+      location: "Gondi Dharamsi, Tehsil Jaora, Dist. Ratlam, MP 457336",
     },
   },
+
   {
     id: "reception",
     name: "Reception",
@@ -156,103 +169,190 @@ export const EVENTS = [
     cal: {
       start: "20270125T133000Z",
       end: "20270125T173000Z",
-      location: "Gondi Dharamsi, Tehsil Jaora, Dist. Ratlam, MP 457336"
+      location: "Gondi Dharamsi, Tehsil Jaora, Dist. Ratlam, MP 457336",
     },
   },
 ];
 
-// Family details
+// 8. FAMILY DETAILS
 export const FAMILY = [
   {
     side: "Groom's Parents",
     name: "Nageshwar Khokhawat Ji & Shyama Bai",
     relation: "Parents of Manas",
-    initials: "NS"
+    initials: "NS",
   },
   {
     side: "Groom's Grandparents",
     name: "Shivnarayan Khokhawat Ji & Chanda Bai",
     relation: "Blessings of the elders",
-    initials: "SC"
+    initials: "SC",
   },
   {
     side: "Bride's Parents",
     name: "Dinesh Hathiya Patidar Ji & Vidhya Bai",
     relation: "Parents of Kavita",
-    initials: "DV"
+    initials: "DV",
   },
   {
     side: "With Warm Love",
     name: "Khokhawat Patidar Parivaar",
     relation: "Khokhawat Pariwar & all Cousins",
-    initials: "K"
+    initials: "K",
   },
 ];
 
-// Frequently asked questions
+// 9. FAQS
 export const FAQS = [
   {
     q: "When should I RSVP by?",
-    a: "Kindly RSVP before 5th January 2027 so we can make sure everything is perfect for you."
+    a: "Kindly RSVP before 5th January 2027 so we can make sure everything is perfect for you.",
   },
   {
     q: "Can I bring a plus one?",
-    a: "We'd love to celebrate with your loved ones! Please indicate the number of guests in your RSVP form."
+    a: "We'd love to celebrate with your loved ones! Please indicate the number of guests in your RSVP form.",
   },
   {
     q: "Will the events be indoors?",
-    a: "The Haldi is outdoors in the morning, while the After Wed Cocktail, Wedding and Reception are held in beautifully decorated venues."
+    a: "The Haldi is outdoors in the morning, while the After Wed Cocktail, Wedding and Reception are held in beautifully decorated venues.",
   },
   {
     q: "Are children welcome?",
-    a: "Absolutely! We adore little ones. Please include them in your guest count so we can arrange for them."
+    a: "Absolutely! We adore little ones. Please include them in your guest count so we can arrange for them.",
   },
   {
     q: "Is there parking at the venue?",
-    a: "Yes, ample parking is available at both venues for all guests."
+    a: "Yes, ample parking is available at both venues for all guests.",
   },
 ];
 
-// Complete wedding dress code and colour palettes
+// 10. DRESS CODE
+// Categories match the dress-code poster.
+// Every colour has a name and HEX code.
+
 export const DRESS_CODE = [
   {
+    id: "mataji",
     event: "Mata Ji Pujan",
-    palette: [
-      "#FFFFFF", // White
-      "#F8F3E6", // Off-White / Cream
-      "#C5C6C7", // Light Grey
-      "#800000", // Maroon
-      "#D71920", // Red
+    date: "20 January 2027",
+    time: "09:00 AM onwards",
+    accent: "#800000",
+
+    categories: [
+      {
+        id: "men-boys",
+        title: "Men & Boys",
+        outfit: "Light-coloured Kurtas",
+        colors: [
+          { name: "White", hex: "#FFFFFF" },
+          { name: "Off-White / Cream", hex: "#F8F3E6" },
+          { name: "Light Grey", hex: "#C5C6C7" },
+        ],
+      },
+      {
+        id: "women-girls",
+        title: "Women & Girls",
+        outfit: "Traditional festive outfits",
+        colors: [
+          { name: "Maroon", hex: "#800000" },
+          { name: "White", hex: "#FFFFFF" },
+          { name: "Red", hex: "#D71920" },
+        ],
+      },
     ],
-    note: "Men & Boys: White, Off-White, Cream or Light Grey Kurtas. Women & Girls: Maroon, White or Red outfits. You can wear a single colour or a combination of the above colours — both are perfectly fine.",
+
+    note: "You can wear a single colour or a combination of the above colours — both are perfectly fine.",
   },
+
   {
-    event: "Haldi",
-    palette: [
-      "#87CEEB", // Sky Blue
-      "#FFC0CB", // Light Pink
-      "#E6C6FF", // Light Lavender
+    id: "haldi",
+    event: "Haldi Ceremony",
+    date: "22 January 2027",
+    time: "10:00 AM onwards",
+    accent: "#8EC5E8",
+
+    categories: [
+      {
+        id: "men-boys",
+        title: "Men & Boys",
+        outfit: "Sky Blue Kurtas",
+        colors: [
+          { name: "Sky Blue", hex: "#87CEEB" },
+        ],
+      },
+      {
+        id: "women-girls",
+        title: "Women & Girls",
+        outfit: "Light-coloured traditional outfits",
+        colors: [
+          { name: "Light Pink", hex: "#FFC0CB" },
+          { name: "Light Lavender", hex: "#E6C6FF" },
+        ],
+      },
     ],
-    note: "Men & Boys: Sky Blue Kurtas. Women & Girls: Light Pink or Light Lavender outfits. You can wear a single colour or a combination of the above colours — both are perfectly fine.",
+
+    note: "You can wear a single colour or a combination of the above colours — both are perfectly fine.",
   },
+
   {
-    event: "Wedding",
-    palette: ["#E4899B", "#D4AF37", "#F5EBD0"],
-    note: "Wear whatever you love",
+    id: "wedding",
+    event: "The Wedding",
+    accent: "#E4899B",
+    categories: [
+      {
+        id: "everyone",
+        title: "Everyone",
+        outfit: "Traditional festive finery",
+        colors: [
+          { name: "Rose Pink", hex: "#E4899B" },
+          { name: "Gold", hex: "#D4AF37" },
+          { name: "Cream", hex: "#F5EBD0" },
+        ],
+      },
+    ],
+    note: "Wear whatever you love.",
   },
+
   {
+    id: "cocktail",
     event: "After Wed Cocktail",
-    palette: ["#2C2C2C", "#3A2A5A", "#1A1A2E"],
-    note: "Dark shades & sparkle",
+    accent: "#C3A6F5",
+    categories: [
+      {
+        id: "everyone",
+        title: "Everyone",
+        outfit: "Dark shades & glam",
+        colors: [
+          { name: "Charcoal", hex: "#2C2C2C" },
+          { name: "Dark Purple", hex: "#3A2A5A" },
+          { name: "Midnight Navy", hex: "#1A1A2E" },
+        ],
+      },
+    ],
+    note: "Dark shades & sparkle.",
   },
+
   {
+    id: "reception",
     event: "Reception",
-    palette: ["#F5F5DC", "#D4AF37", "#E6E6FA"],
-    note: "Your choice, dress to impress",
+    accent: "#D4AF37",
+    categories: [
+      {
+        id: "everyone",
+        title: "Everyone",
+        outfit: "Your choice, dress to impress",
+        colors: [
+          { name: "Beige", hex: "#F5F5DC" },
+          { name: "Gold", hex: "#D4AF37" },
+          { name: "Lavender", hex: "#E6E6FA" },
+        ],
+      },
+    ],
+    note: "Your choice, dress to impress.",
   },
 ];
 
-// Wedding venues
+// 11. VENUES
 export const VENUES = [
   {
     name: "Wedding Venue — Hatanara",
@@ -261,11 +361,12 @@ export const VENUES = [
     mapsEmbed: "https://www.google.com/maps?q=Hatanara%2C%20Piploda%2C%20Ratlam%2C%20Madhya%20Pradesh&output=embed",
     directions: "https://www.google.com/maps/dir/?api=1&destination=Hatanara+Piploda+Ratlam+Madhya+Pradesh",
   },
+
   {
     name: "Gondi Dharamsi",
     tag: "Mata Ji Pujan · Haldi · After Wed Cocktail · Reception",
     address: "Gondi Dharamsi, Tehsil Jaora, Dist. Ratlam, Madhya Pradesh 457336, IN",
-    mapsEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d616.4392946940687!2d75.2358521662536!3d23.763851807625215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396417d85dc77739%3A0x97cbce553862c468!2z4KS44KSw4KSm4KS-4KSwIOCkquCkn-Clh-CksiDgpKfgpLDgpY3gpK7gpLbgpL7gpLLgpL4g4KSX4KWL4KSC4KSm4KWAIOCkp-CksOCljeCkruCkuOClgA!5e1!3m2!1sen!2sin!4v1787295621818!5m2!1sen!2sin",
+    mapsEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d616.4392946940687!2d75.2358521662536!3d23.763851807625215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396417d85dc77739%3A0x97cbce553862c468!5e1!3m2!1sen!2sin",
     directions: "https://www.google.com/maps/dir/?api=1&destination=23.763851807625215,75.2358521662536",
   },
 ];
