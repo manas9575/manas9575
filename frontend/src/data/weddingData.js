@@ -77,7 +77,7 @@ export const EVENTS = [
   {
     id: "mataji",
     name: "Mata Ji Pujan",
-    img: IMG.floralDivider,
+    img: IMG.ganesh,
     date: "20 January 2027",
     time: "09:00 AM onwards",
     day: "Wednesday",
